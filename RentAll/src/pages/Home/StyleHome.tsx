@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
     header:{
      paddingHorizontal: 15,
      flexDirection: 'row',
@@ -38,3 +38,5 @@ export const styles = StyleSheet.create({
       color: '#4f4a4a'
     }
   });
+
+  export default styles;
