@@ -7,6 +7,7 @@ interface Props {
     cover: any;
     name: string;
     description: string;
+    price: string;
     onPress: () => void
   }
 
@@ -34,7 +35,7 @@ interface Props {
 
             <View style={styles.footer}>
                 <View style={{width: '80%'}}>
-                    <Text style={styles.price}>R$ 1.204,90</Text>
+                    <Text style={styles.price}>{props.price}</Text>
                 </View>
                 <View style={{width: '20%'}}>
                     <Ionicons name="ios-add-circle" size={24} color="black"/>
