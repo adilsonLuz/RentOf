@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { Feather , Ionicons} from '@expo/vector-icons';
 import { ScrollView } from 'react-native-gesture-handler';
+import ReactStars from 'react-stars';
 
 
 
@@ -24,15 +25,60 @@ export default function Detail() {
                 <View style={{ width: '35%' }}>
                     <Text style={styles.rating}>Avaliações</Text>
                     <View style={{alignItems: 'center', flexDirection: 'row'}}>
-                        
+                    
                     </View>
                 </View>
             </View>
+
+            <Text style={styles.price}>
+                R$ 1200,20
+            </Text>
+            <Text style={styles.description}>
+                Casa a uma quadra do mar, lugar seguro e monitorado 24 horas
+            </Text>
+
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15, marginTop: 40}}>
+                <View style={styles.slide}>
+                    <Image
+                    source={require('../../assets/house1.jpg')}
+                    style={{width: 90, height: 90}}
+                    />
+                </View>
+
+                <View style={styles.slide}>
+                    <Image
+                    source={require('../../assets/house2.jpg')}
+                    style={{width: 90, height: 90}}
+                    />
+                </View>
+
+                <View style={styles.slide}>
+                    <Image
+                    source={require('../../assets/house3.jpg')}
+                    style={{width: 90, height: 90}}
+                    />
+                </View>
+
+                <View style={styles.slide}>
+                    <Image
+                    source={require('../../assets/house4.jpg')}
+                    style={{width: 90, height: 90}}
+                    />
+                </View>
+
+                <View style={styles.slide}>
+                    <Image
+                    source={require('../../assets/house5.jpg')}
+                    style={{width: 90, height: 90}}
+                    />
+                </View>
+            </ScrollView>
+
         </View>
     );
 }
 
-/*<Stars
+/*<ReactStars
 default={4}
 count={5}
 half={true}
