@@ -46,7 +46,7 @@ export default function Home() {
                 name="Rancho SP"
                 description="Local agradavel Longe de poluição com piscina e varios quartos separados"
                 price="R$ 1.450,00"
-                onPress={() => {}}
+                onPress={() => navigation.navigate('map')}
                 />
 
                 <New

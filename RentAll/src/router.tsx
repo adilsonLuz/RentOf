@@ -6,6 +6,7 @@ import { TouchableOpacity } from 'react-native';
 
 import Home from './pages/Home/Home';
 import Detail from './pages/Detail/Detail';
+import Map from './pages/Map/Map';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,26 @@ function Routes(){
                  component={Home} 
                  options={{
                     title: 'RENT ALL',
+                    headerTitleStyle:{
+                        fontFamily: 'Montserrat_700Bold'
+                    },
+                 headerRight: () => (
+                     <TouchableOpacity style={{marginRight: 15}}>
+                       <Feather
+                        name="shopping-bag"
+                        size={24}
+                        color="#000"
+                       />
+                     </TouchableOpacity>
+                 )
+                 }}
+                 />
+
+                <Stack.Screen
+                 name="map" 
+                 component={Map} 
+                 options={{
+                    title: 'LOCALIZAÇÃO',
                     headerTitleStyle:{
                         fontFamily: 'Montserrat_700Bold'
                     },
