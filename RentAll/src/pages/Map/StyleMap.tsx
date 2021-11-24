@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
       flex: 1,
       paddingHorizontal: 15,
-      marginBottom: 15
+      
     },  
     mapContainer: {
       flex: 1,
@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
       borderRadius: 10,
       overflow: 'hidden',
       marginTop: 15,
+      marginBottom: 15,
+      elevation: 2,
+      
     },  
     map: {
       width: '100%',
@@ -26,23 +29,25 @@ const styles = StyleSheet.create({
       height: 80, 
     },  
     mapMarkerContainer: {
-      width: 120,
+      width: 100,
       height: 70,
       backgroundColor: '#34CB79',
       flexDirection: 'column',
       borderRadius: 8,
       overflow: 'hidden',
-      alignItems: 'center'
+      alignItems: 'center',
+      elevation: 2
     },  
     mapMarkerImage: {
-      width: 120,
+      width: 100,
       height: 45,
       resizeMode: 'cover',
+      elevation: 2,
     },  
     mapMarkerTitle: {
       flex: 1,
-      fontFamily: 'Roboto_400Regular',
-      color: '#FFF',
+      fontFamily: 'Montserrat_500Medium',
+      color: '#fff',
       fontSize: 10,
       lineHeight: 23,
     },

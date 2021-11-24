@@ -23,7 +23,7 @@ statically without integration with databases and API's. 🤯</p>
 
 <h2><ul><li>VERSIONS 🔄</li></ul></h2>
 
-<table>
+<table align="center">
   <tr align="center">
     <td>VS Code</td>
     <td>Node</td>

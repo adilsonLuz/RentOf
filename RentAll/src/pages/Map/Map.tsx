@@ -21,16 +21,16 @@ export default function Map(){
             
             <View style={styles.mapContainer}>
                 <MapView style={styles.map} initialRegion={{
-                    latitude:-23.4460282,
-                    longitude:-46.9172153,
-                    latitudeDelta: 0.014,
-                    longitudeDelta: 0.014
+                    latitude:34.410330,
+                    longitude:-111.493189,
+                    latitudeDelta: 0.010,
+                    longitudeDelta: 0.010
                 }}
                 >
 
-                <Marker onPress={handlerNavigateDetail} coordinate={{latitude:-23.4460282,longitude:-46.9172153}}>
+                <Marker onPress={handlerNavigateDetail} coordinate={{latitude:34.410330,longitude:-111.493189}}>
                     <View style={styles.mapMarkerContainer}>
-                         <Image style={styles.mapMarkerImage} source={{uri: 'https://f.i.uol.com.br/fotografia/2019/08/16/15659855445d570b082fe09_1565985544_3x2_md.jpg'}}/>
+                         <Image style={styles.mapMarkerImage} source={{uri: 'https://casa.abril.com.br/wp-content/uploads/2016/11/01-zillow.jpeg'}}/>
                          <Text  style={styles.mapMarkerTitle}>Centro Histórico</Text>
                     </View>
                 </Marker> 
