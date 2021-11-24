@@ -2,12 +2,11 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { Feather , Ionicons} from '@expo/vector-icons';
 import { ScrollView } from 'react-native-gesture-handler';
-import ReactStars from 'react-stars';
 
 
 
 
-import SwiperComponent from "../../components/Swiper";
+import SwiperComponent from "../../components/Swiper2";
 import styles from './StyleDetail';
 
 export default function Detail() {
@@ -19,7 +18,7 @@ export default function Detail() {
             
             <View style={styles.headerContent}>
                 <View style={{ width: '65%' }}>
-                    <Text>Casa Florida</Text>
+                    <Text>Casa Manhattan</Text>
                 </View>
             
                 <View style={{ width: '35%' }}>
@@ -31,49 +30,48 @@ export default function Detail() {
             </View>
 
             <Text style={styles.price}>
-                US$ 1200.00
+                US$ 1450.00
             </Text>
             <Text style={styles.description}>
-                Casa confortavel com estilo moderno, segurança e privacidade
+                Local agradavel Longe de poluição com piscina e varios quartos separados
             </Text>
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15, marginTop: 40}}>
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house1.1.jpeg')}
+                    source={require('../../assets/house2.1.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>
 
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house2.jpg')}
+                    source={require('../../assets/house2.2.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>
 
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house3.jpg')}
+                    source={require('../../assets/house2.3.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>
 
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house4.jpg')}
+                    source={require('../../assets/house2.4.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>
 
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house5.jpg')}
+                    source={require('../../assets/house2.5.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>
             </ScrollView>
-
         </View>
     );
 }

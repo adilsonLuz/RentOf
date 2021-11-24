@@ -8,7 +8,7 @@ interface Props {
     name: string;
     description: string;
     price: string;
-    onPress: () => void
+    onPress: () => void;
   }
 
   const New: React.FC<Props> = (props) => {

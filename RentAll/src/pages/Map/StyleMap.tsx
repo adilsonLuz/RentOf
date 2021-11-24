@@ -29,26 +29,25 @@ const styles = StyleSheet.create({
       height: 80, 
     },  
     mapMarkerContainer: {
-      width: 100,
-      height: 70,
+      width: 80,
+      height: 80,
       backgroundColor: '#34CB79',
       flexDirection: 'column',
-      borderRadius: 8,
+      borderRadius: 80,
       overflow: 'hidden',
       alignItems: 'center',
       elevation: 2
     },  
     mapMarkerImage: {
       width: 100,
-      height: 45,
+      height: 55,
       resizeMode: 'cover',
-      elevation: 2,
     },  
     mapMarkerTitle: {
       flex: 1,
       fontFamily: 'Montserrat_500Medium',
       color: '#fff',
-      fontSize: 10,
+      fontSize: 8,
       lineHeight: 23,
     },
   });

@@ -1,14 +1,16 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 interface Props {
   cover: any;
   description: string;
   price: string;
+  onPress: () => void;
 }
 
 const House: React.FC<Props> = (props) => {
     return (
+      <TouchableOpacity onPress={props.onPress}>
         <View style={styles.container}>
           <View>
             <Image
@@ -21,6 +23,7 @@ const House: React.FC<Props> = (props) => {
             <Text style={styles.price}>{props.price}</Text>
           </View>
         </View>
+        </TouchableOpacity>
     );
 }
 

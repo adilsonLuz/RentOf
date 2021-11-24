@@ -10,6 +10,7 @@ import House from '../../components/House';
 import Recommended from "../../components/Recommended";
 
 
+
 export default function Home() {
     const navigation = useNavigation();
 
@@ -34,27 +35,27 @@ export default function Home() {
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15, }}>
                 <New
-                cover={require('../../assets/house1.jpg')}
-                name="Casa de Praia"
-                description="Casa a uma quadra do mar, lugar seguro e monitorado 24 horas"
-                price="R$ 1.200,90"
+                cover={require('../../assets/house1.1.jpeg')}
+                name="Casa Florida"
+                description="Casa confortavel com estilo moderno, segurança e privacidade."
+                price="US$ 1200.00"
                 onPress={() => navigation.navigate('detail')}
                 />
 
                 <New
-                cover={require('../../assets/house2.jpg')}
-                name="Rancho SP"
+                cover={require('../../assets/house2.1.jpeg')}
+                name="Casa Manhattan"
                 description="Local agradavel Longe de poluição com piscina e varios quartos separados"
-                price="R$ 1.450,00"
-                onPress={() => navigation.navigate('map')}
+                price="US$ 1450.00"
+                onPress={() => navigation.navigate('detail2')}
                 />
 
                 <New
-                cover={require('../../assets/house3.jpg')}
-                name="Casa Floripa"
-                description="Belezas naturais, variedade de praias, caracterizada por sua arquitetura colonial."
-                price="R$ 2.560,00"
-                onPress={() => {}}
+                cover={require('../../assets/house3.1.jpg')}
+                name="Casa Texas"
+                description="Belezas naturais, arquitetura moderna, caracterizada por sua vista panoramica."
+                price="US$ 2560.00"
+                onPress={() => navigation.navigate('detail3')}
                 />
             </ScrollView>
 
@@ -64,21 +65,24 @@ export default function Home() {
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15}}>
                 <House
-                cover={require('../../assets/house4.jpg')}
-                description="Aqui vai ser colocado qualquer texto com a descrição"
-                price="R$ 924,00"
+                cover={require('../../assets/house4.1.jpg')}
+                description="Vista panoramica, segurança 24 horas, ótima localização"
+                price="US$ 924.00"
+                onPress={() => navigation.navigate('map')}
                 />
 
                 <House
-                cover={require('../../assets/house5.jpg')}
-                description="Aqui vai ser colocado qualquer texto com a descrição"
-                price="R$ 1.330,00"
+                cover={require('../../assets/house5.1.jpg')}
+                description="Todo conforto e segurança com toque de estilo Italiano."
+                price="US$ 1330.00"
+                onPress={() => navigation.navigate('map2')}
                 />
 
                 <House
-                cover={require('../../assets/house6.jpg')}
-                description="Aqui vai ser colocado qualquer texto com a descrição"
-                price="R$ 2.180,00"
+                cover={require('../../assets/house6.1.jpeg')}
+                description="Para quem gosta do estilo oriental irá se maravilhar com esta casa pré-moldada."
+                price="US$ 2180.00"
+                onPress={() => navigation.navigate('map3')}
                 />
             </ScrollView>
 
@@ -86,20 +90,20 @@ export default function Home() {
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                 <Recommended
-                cover={require('../../assets/house1.jpg')}
-                title="Casa Floripa"
+                cover={require('../../assets/house7.1.jpg')}
+                title="Casa Florida"
                 offer="20% OFF"
                 />
 
                 <Recommended
-                cover={require('../../assets/house2.jpg')}
-                title="Casa Praia"
+                cover={require('../../assets/house8.1.jpg')}
+                title="Casa Texas"
                 offer="15% OFF"                
                 />
 
                 <Recommended
-                cover={require('../../assets/house3.jpg')}
-                title="Casa SP"
+                cover={require('../../assets/house9.1.jpg')}
+                title="Casa Miame"
                 offer="10% OFF"
                 />
             </ScrollView>
