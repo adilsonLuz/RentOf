@@ -12,7 +12,7 @@ export default function Map(){
     const navigation = useNavigation();
     
     function handlerNavigateDetail(){
-        navigation.navigate('detail');
+        navigation.navigate('detail3');
     }
 
     return(
@@ -21,17 +21,17 @@ export default function Map(){
             
             <View style={styles.mapContainer}>
                 <MapView style={styles.map} initialRegion={{
-                    latitude:34.410330,
-                    longitude:-111.493189,
-                    latitudeDelta: 0.010,
-                    longitudeDelta: 0.010
+                    latitude:37.335079,
+                    longitude:-85.335232,
+                    latitudeDelta: 0.014,
+                    longitudeDelta: 0.014
                 }}
                 >
 
-                <Marker onPress={handlerNavigateDetail} coordinate={{latitude:34.410330,longitude:-111.493189}}>
+                <Marker onPress={handlerNavigateDetail} coordinate={{latitude:37.335079,longitude:-85.335232}}>
                     <View style={styles.mapMarkerContainer}>
-                         <Image style={styles.mapMarkerImage} source={{uri: 'https://casa.abril.com.br/wp-content/uploads/2016/11/01-zillow.jpeg'}}/>
-                         <Text  style={styles.mapMarkerTitle}>Centro Histórico</Text>
+                         <Image style={styles.mapMarkerImage} source={{uri: 'https://casa.abril.com.br/wp-content/uploads/2021/11/8-minimalismo-japones-e-madeira-norteiam-o-projeto-desta-casa-de-58-m-2.jpg?resize=1024,683'}}/>
+                         <Text  style={styles.mapMarkerTitle}>Campbellsville</Text>
                     </View>
                 </Marker> 
 

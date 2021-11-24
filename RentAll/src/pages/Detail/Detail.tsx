@@ -47,28 +47,21 @@ export default function Detail() {
 
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house2.jpg')}
+                    source={require('../../assets/house1.2.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>
 
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house3.jpg')}
+                    source={require('../../assets/house1.3.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>
 
                 <View style={styles.slide}>
                     <Image
-                    source={require('../../assets/house4.jpg')}
-                    style={{width: 90, height: 90}}
-                    />
-                </View>
-
-                <View style={styles.slide}>
-                    <Image
-                    source={require('../../assets/house5.jpg')}
+                    source={require('../../assets/house1.4.jpeg')}
                     style={{width: 90, height: 90}}
                     />
                 </View>

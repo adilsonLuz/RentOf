@@ -26,21 +26,28 @@ export default function SwiperComponent() {
         >
           <View style={styles.slide}>
             <Image
-            source={require('../assets/house1.jpg')}
+            source={require('../assets/house1.1.jpeg')}
             style={{ width: '100%', height: 400 }}
             />
           </View>
 
           <View style={styles.slide}>
             <Image
-            source={require('../assets/house2.jpg')}
+            source={require('../assets/house1.2.jpeg')}
             style={{ width: '100%', height: 400 }}
             />
           </View>
 
           <View style={styles.slide}>
             <Image
-            source={require('../assets/house3.jpg')}
+            source={require('../assets/house1.3.jpeg')}
+            style={{ width: '100%', height: 400 }}
+            />
+          </View>
+
+          <View style={styles.slide}>
+            <Image
+            source={require('../assets/house1.4.jpeg')}
             style={{ width: '100%', height: 400 }}
             />
           </View>
